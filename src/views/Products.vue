@@ -47,7 +47,7 @@
             active-class="bg-gray-900 text-white"
             >Jobs</router-link>
             </li>
-            
+
         </ul>
       </div>
     </nav>
@@ -112,7 +112,6 @@ export default {
     },
     mounted() {
         this.fetchProducts();
-        this.fetchProductImage();
     },
 }
 </script>
