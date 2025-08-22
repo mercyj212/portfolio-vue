@@ -39,6 +39,15 @@
               exact
             >Products</router-link>
           </li>
+
+             <li>
+            <router-link 
+            to="/jobs" 
+            class="text-gray-300 hover:text-white hover:bg-gray-900 px-3 py-3 rounded-md font-semibold"
+            active-class="bg-gray-900 text-white"
+            >Jobs</router-link>
+            </li>
+            
         </ul>
       </div>
     </nav>
@@ -98,9 +107,12 @@ export default {
                 this.loading = false;
             }
         },
+
+        
     },
     mounted() {
         this.fetchProducts();
+        this.fetchProductImage();
     },
 }
 </script>
